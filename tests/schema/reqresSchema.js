@@ -1,0 +1,105 @@
+const reqresSchema = {
+  "title": "Generated Schema",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "email": {
+          "type": "string"
+        },
+        "first_name": {
+          "type": "string"
+        },
+        "last_name": {
+          "type": "string"
+        },
+        "avatar": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "email",
+        "first_name",
+        "last_name",
+        "avatar"
+      ]
+    },
+    "support": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "url",
+        "text"
+      ]
+    },
+    "_meta": {
+      "type": "object",
+      "properties": {
+        "powered_by": {
+          "type": "string"
+        },
+        "docs_url": {
+          "type": "string"
+        },
+        "upgrade_url": {
+          "type": "string"
+        },
+        "example_url": {
+          "type": "string"
+        },
+        "variant": {
+          "type": "string"
+        },
+        "message": {
+          "type": "string"
+        },
+        "cta": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "label",
+            "url"
+          ]
+        },
+        "context": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "powered_by",
+        "docs_url",
+        "upgrade_url",
+        "example_url",
+        "variant",
+        "message",
+        "cta"
+      ]
+    }
+  },
+  "required": [
+    "data",
+    "support",
+    "_meta"
+  ]
+};
+
+export default reqresSchema;
